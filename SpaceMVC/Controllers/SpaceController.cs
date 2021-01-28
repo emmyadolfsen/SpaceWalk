@@ -46,7 +46,7 @@ namespace SpaceMVC.Controllers
             return View();
         }
 
-        [HttpPost("/SpaceCat")] // Post när vi hämtar formdata
+        [HttpPost("/SpaceCat")] // Post för att hämtar formdata
         public IActionResult About(Item model)
         {
             if (ModelState.IsValid)

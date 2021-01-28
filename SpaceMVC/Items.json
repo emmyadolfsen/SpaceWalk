@@ -1,13 +1,5 @@
 [
   {
-    "Name": "Emmy",
-    "Movie": "Anchorman",
-    "Drink": "Loka Crush(päron)",
-    "AmericanCream": true,
-    "AmericanCurl": false,
-    "Balines": false
-  },
-  {
     "Name": "Debug Thugs",
     "Movie": "Katter med klös",
     "Drink": "rootbeer",

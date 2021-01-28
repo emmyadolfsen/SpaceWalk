@@ -12,19 +12,24 @@
 
 <form method="post">
     <div class="form-group">
-        <span asp-validation-for="Name"></span>
+
         <label asp-for="Name"></label>
         <input asp-for="Name" class="form-control" />
-
+        <span asp-validation-for="Name" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <span asp-validation-for="Movie"></span>
         <label asp-for="Movie"></label>
-        <input asp-for="Movie" class="form-control" />
-
+        <br />
+        <select class="form-select" name="Movie">
+            <option selected>Pelle Svanslös</option>
+            <option value="Katter med klös">Katter med klös</option>
+            <option value="A Street Cat Named Bob">A Street Cat Named Bob</option>
+            <option value="E.T. the Extra-Terrestrial">E.T. the Extra-Terrestrial</option>
+        </select>
     </div>
+
+
     <div class="form-group">
-        <span asp-validation-for="Drink"></span>
         <label asp-for="Drink"></label>
         <br />
         @Html.RadioButton("Drink", "rootbeer") Rootbeer
@@ -34,6 +39,8 @@
         @Html.RadioButton("Drink", "milk") Milk
         <br />
         @Html.RadioButton("Drink", "öl") Öl
+        <br />
+        <span asp-validation-for="Drink" class="text-danger"></span>
 
     </div>
     <div class="form-gruop">
