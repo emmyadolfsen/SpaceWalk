@@ -1,0 +1,31 @@
+﻿@model SpaceMVC.Models.Item
+@{
+    ViewData["Title"] = "Space Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Space</h1>
+    <hr />
+    <h2>
+        Please insert name
+        <br />
+        for takeoff.....
+    </h2>
+    <br />
+</div>
+
+
+<form class="d-flex flex-column align-items-center" asp-controller="Space" asp-action="SpaceWalk" method="get">
+    <div class="form-group mb-2">
+        <input id="nameinput" name="nameinput" type="text" class="form-control" value="" />
+    </div>
+    <div class="form-group mb-2 ">
+        <input type="submit" value="Ok" class="btn btn-info mb-2" />
+    </div>
+</form>
+
+<partial name="_EndTagsPartial" />
+<partial name="_FooterPartial" />
+
+
+

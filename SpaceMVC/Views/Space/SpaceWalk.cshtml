@@ -1,0 +1,31 @@
+﻿@model SpaceMVC.Models.Item
+@{
+    ViewData["Title"] = "SpaceWalk";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Walking through Space</h1>
+
+    <p class="text-center">@ViewBag.input takes a walk.....</p>
+    <div class="walk-btn-div">
+        <a asp-area="" asp-controller="Space" asp-action="About" class="btn btn-dark btn-lg mt-5 hidden" id="walk-btn">I am DONE walking</a>
+    </div>
+</div>
+
+<div class="d-flex">
+    <div class="flex-fill p-4  mx-auto animate__animated animate__fadeInLeft" id="first-cat">
+        <img src="~/images/Cat.png" class="img-fluid" />
+        <p class="pt-3 pl-4">@ViewBag.input</p>
+    </div>
+    <div class="flex-fill p-4 animate__animated animate__fadeInDown animate__delay-1s" id="second-cat">
+        <img src="~/images/Cat.png" class="img-fluid" />
+        <p class="pt-3 pl-4">@ViewBag.input</p>
+    </div>
+    <div class="flex-fill p-4 animate__animated hidden" id="third-cat">
+        <img src="~/images/Cat.png" class="img-fluid" />
+        <p class="pt-3 pl-4">@ViewBag.input</p>
+    </div>
+
+</div>
+
+<partial name="_EndTagsPartial" />

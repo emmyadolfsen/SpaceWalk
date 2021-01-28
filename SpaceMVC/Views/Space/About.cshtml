@@ -1,0 +1,51 @@
+﻿@model SpaceMVC.Models.Item
+
+@{
+    ViewData["Title"] = "SpaceCat";
+}
+
+<div class="text-center">
+    <h1 class="display-4">This is SpaceCat</h1>
+</div>
+
+<p>@ViewBag.nameoutput Fyll i och klicka på lägg till.</p>
+
+<form method="post">
+    <div class="form-group">
+        <span asp-validation-for="Name"></span>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+
+    </div>
+    <div class="form-group">
+        <span asp-validation-for="Movie"></span>
+        <label asp-for="Movie"></label>
+        <input asp-for="Movie" class="form-control" />
+
+    </div>
+    <div class="form-group">
+        <span asp-validation-for="Drink"></span>
+        <label asp-for="Drink"></label>
+        <br />
+        @Html.RadioButton("Drink", "rootbeer") Rootbeer
+        <br />
+        @Html.RadioButton("Drink", "Loka Crush(päron)") Loka crush(päron)
+        <br />
+        @Html.RadioButton("Drink", "milk") Milk
+        <br />
+        @Html.RadioButton("Drink", "öl") Öl
+
+    </div>
+    <div class="form-gruop">
+        <label>Nedan följer en lista med raser. Vilka av dom är kattraser?</label>
+        <br />
+        <input asp-for="AmericanCream">American Cream
+        <br />
+        <input asp-for="AmericanCurl">American Curl
+        <br />
+        <input asp-for="Balines">Balines
+    </div>
+    <button type="submit" class="btn btn-primary">Lägg till</button>
+</form>
+
+<partial name="_EndTagsPartial" />

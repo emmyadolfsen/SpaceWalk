@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "Emmy Adolfsen",
+    "Movie": "Katter med klös",
+    "Drink": "rootbeer",
+    "AmericanCream": false,
+    "AmericanCurl": true,
+    "Balines": false
+  },
+  {
+    "Name": "Emmy Adolfsen",
+    "Movie": "Katter med klös",
+    "Drink": "rootbeer",
+    "AmericanCream": false,
+    "AmericanCurl": true,
+    "Balines": false
+  },
+  {
+    "Name": "Debug Thugs",
+    "Movie": "Catch the bugs",
+    "Drink": "milk",
+    "AmericanCream": false,
+    "AmericanCurl": true,
+    "Balines": true
+  }
+]
