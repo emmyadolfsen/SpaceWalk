@@ -59,15 +59,6 @@ namespace SpaceMVC.Controllers
                 System.IO.File.WriteAllText("items.json", JsonConvert.SerializeObject(JsonObj, Formatting.Indented));
 
 
-                /*
-                string objName = Request.Form["Name"];
-                string objMovie = Request.Form["Movie"];
-                string objDrink = Request.Form["Drink"];
-                string objAmCream = Request.Form["AmericanCream"];
-                string objAmCurl = Request.Form["AmericanCurl"];
-                string objBali = Request.Form["Balines"];
-                */
-
                 // Lägg input i variabler
                 // Spara variablerna i en session
                 HttpContext.Session.SetString("objName", Request.Form["Name"]);
@@ -98,12 +89,12 @@ namespace SpaceMVC.Controllers
             if ((objAmCurl == "true,false") && (objAmCream == "false") && (objBali == "true,false"))
             {
 
-                ViewBag.result = "Bravo! Du hade helt rätt att American Curl och Balines är kattraser!";
+                ViewBag.result = "Bravo! =) Du hade helt rätt att American Curl och Balines är kattraser!";
                 
             }
             else
             {
-                ViewBag.result = "Fel.. American Cream är en hästras.";
+                ViewBag.result = "Du hade fel.. =( American Cream är en hästras.";
                     ViewBag.result2 = "American Curl och Balines är rätt svar.";
             }
 
@@ -115,7 +106,7 @@ namespace SpaceMVC.Controllers
 
 
             // Skapa ny instans av itemlist
-            var itemlist = new List<Item>(); // Skapa ny lista
+            var itemlist = new List<Item>();
             // Läs in från json
             var JsonS = System.IO.File.ReadAllText("items.json");
             itemlist = JsonConvert.DeserializeObject<List<Item>>(JsonS);  // Deserialisera

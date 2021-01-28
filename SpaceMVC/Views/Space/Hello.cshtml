@@ -11,30 +11,29 @@
     <p class="text-center">
         Efter en lång dag med rymdpromenad
         <br />
-        får äntligen @ViewBag.objName bänka sig framför @ViewBag.objMovie
+        får äntligen <span class="text-info">@ViewBag.objName</span> bänka sig framför
+        <span class="text-info">@ViewBag.objMovie</span>
         <br />
-        med en stor skål @ViewBag.objDrink.
-    </p>
+        med en stor skål <span class="text-info">@ViewBag.objDrink</span>.
+</p>
     <div class="d-flex justify-content-center">
         <partial name="_ImagePartial" />
+
     </div>
-    <p class="text-center mt-5">
-        <span class="bg-dark p-2">
+    <p class="text-center mt-5 bg-dark p-2 rounded">
             @ViewBag.result
             <br />
             @ViewBag.result2
-        </span>
-
     </p>
 </div>
 
-<h2 class="mt-5 pt-5">Andra som har varit på SpaceWalk:</h2>
-<table class="table table-dark table-hover mt-3">
+<h2 class="pt-5">Andra som har varit på SpaceWalk:</h2>
+<table class="table table-dark table-hover mt-3 rounded">
     <thead>
-        <tr>
+        <tr class="rounded">
             <th scope="col">@Html.DisplayNameFor(model => model.Name)</th>
             <th scope="col">@Html.DisplayNameFor(model => model.Movie)</th>
-            <th scope="col">@Html.DisplayNameFor(model => model.Drink)</th>
+            <th scope="col">Vald dryck</th>
         </tr>
     </thead>
     <tbody>

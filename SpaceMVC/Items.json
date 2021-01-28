@@ -1,24 +1,24 @@
 [
   {
-    "Name": "Emmy Adolfsen",
-    "Movie": "Katter med klös",
-    "Drink": "rootbeer",
-    "AmericanCream": false,
-    "AmericanCurl": true,
-    "Balines": false
-  },
-  {
-    "Name": "Emmy Adolfsen",
-    "Movie": "Katter med klös",
-    "Drink": "rootbeer",
-    "AmericanCream": false,
-    "AmericanCurl": true,
+    "Name": "Emmy",
+    "Movie": "Anchorman",
+    "Drink": "Loka Crush(päron)",
+    "AmericanCream": true,
+    "AmericanCurl": false,
     "Balines": false
   },
   {
     "Name": "Debug Thugs",
-    "Movie": "Catch the bugs",
-    "Drink": "milk",
+    "Movie": "Katter med klös",
+    "Drink": "rootbeer",
+    "AmericanCream": true,
+    "AmericanCurl": false,
+    "Balines": false
+  },
+  {
+    "Name": "Nisse",
+    "Movie": "Pelle svanslös",
+    "Drink": "öl",
     "AmericanCream": false,
     "AmericanCurl": true,
     "Balines": true
