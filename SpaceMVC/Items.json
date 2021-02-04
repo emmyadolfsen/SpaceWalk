@@ -46,5 +46,21 @@
     "AmericanCream": false,
     "AmericanCurl": true,
     "Balines": false
+  },
+  {
+    "Name": "Nisse",
+    "Movie": "A Street Cat Named Bob",
+    "Drink": "öl",
+    "AmericanCream": false,
+    "AmericanCurl": true,
+    "Balines": true
+  },
+  {
+    "Name": "Debug Thugs",
+    "Movie": "Katter med klös",
+    "Drink": "rootbeer",
+    "AmericanCream": true,
+    "AmericanCurl": false,
+    "Balines": false
   }
 ]

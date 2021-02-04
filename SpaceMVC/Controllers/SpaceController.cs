@@ -57,7 +57,7 @@ namespace SpaceMVC.Controllers
                 // Öppna jsonfil
                 var JsonStr = System.IO.File.ReadAllText("items.json");
                 var JsonObj = JsonConvert.DeserializeObject<List<Item>>(JsonStr); // Deserialisera till lista
-                JsonObj.Add(model); // Lägg till input objektet
+                JsonObj.Add(model); // Lägg till input objekten
                 // Lagra
                 System.IO.File.WriteAllText("items.json", JsonConvert.SerializeObject(JsonObj, Formatting.Indented));
 

@@ -20,6 +20,7 @@ namespace SpaceMVC.Models
         [Display(Name = "Välj dryck")]
         public string Drink { get; set; }
 
+        // Checklista
         public bool AmericanCream { get; set; }
         public bool AmericanCurl { get; set; }
         public bool Balines { get; set; }
