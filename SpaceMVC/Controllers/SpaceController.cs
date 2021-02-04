@@ -22,8 +22,10 @@ namespace SpaceMVC.Controllers
         [HttpGet]
         public IActionResult SpaceWalk([FromQuery]string nameinput) // Skicka namn via url
         {
-            HttpContext.Session.SetString("nameinput", nameinput); // Lägg till namn i en sessionsvariabel
+            // Lägg till namn i en sessionsvariabel
+            HttpContext.Session.SetString("nameinput", nameinput); 
             ViewBag.input = nameinput;
+
             return View();
         }
 
@@ -33,6 +35,7 @@ namespace SpaceMVC.Controllers
         {
             // Hämta sessionsvariabel
             string output = HttpContext.Session.GetString("nameinput");
+
             // Kolla om sessionsvariabel finns
             if (output != null)
             {
@@ -59,8 +62,7 @@ namespace SpaceMVC.Controllers
                 System.IO.File.WriteAllText("items.json", JsonConvert.SerializeObject(JsonObj, Formatting.Indented));
 
 
-                // Lägg input i variabler
-                // Spara variablerna i en session
+                // Spara input i sessionsvariabler
                 HttpContext.Session.SetString("objName", Request.Form["Name"]);
                 HttpContext.Session.SetString("objMovie", Request.Form["Movie"]);
                 HttpContext.Session.SetString("objDrink", Request.Form["Drink"]);
@@ -107,6 +109,7 @@ namespace SpaceMVC.Controllers
 
             // Skapa ny instans av itemlist
             var itemlist = new List<Item>();
+
             // Läs in från json
             var JsonS = System.IO.File.ReadAllText("items.json");
             itemlist = JsonConvert.DeserializeObject<List<Item>>(JsonS);  // Deserialisera

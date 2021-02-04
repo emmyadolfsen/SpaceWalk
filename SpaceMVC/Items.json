@@ -14,5 +14,37 @@
     "AmericanCream": false,
     "AmericanCurl": true,
     "Balines": true
+  },
+  {
+    "Name": "Nisse",
+    "Movie": "Katter med klös",
+    "Drink": "milk",
+    "AmericanCream": false,
+    "AmericanCurl": true,
+    "Balines": true
+  },
+  {
+    "Name": "Ghost B.C",
+    "Movie": "E.T. the Extra-Terrestrial",
+    "Drink": "Loka Crush(päron)",
+    "AmericanCream": true,
+    "AmericanCurl": false,
+    "Balines": false
+  },
+  {
+    "Name": "Emmy Adolfsen",
+    "Movie": "E.T. the Extra-Terrestrial",
+    "Drink": "rootbeer",
+    "AmericanCream": true,
+    "AmericanCurl": false,
+    "Balines": false
+  },
+  {
+    "Name": "Debug Thugs",
+    "Movie": "A Street Cat Named Bob",
+    "Drink": "milk",
+    "AmericanCream": false,
+    "AmericanCurl": true,
+    "Balines": false
   }
 ]
